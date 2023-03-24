@@ -1,0 +1,38 @@
+.top2{
+    top: -3.5rem;left: -2.6rem;
+    transform: rotate(-15deg) skew(45deg,0deg);
+}
+.right2{
+    top: -0.44rem;
+    left: -0.32rem;
+    transform: skew(0deg,-15deg);
+}
+.left2{
+    margin: 0rem;
+    top: -1.05rem;
+    left: -4.7rem;
+    transform: skew(0deg,30deg);
+}
+.circle_light{
+    box-shadow: 0 0 5px rgb(254 240 138),
+                0 0 10px rgb(254 240 138),
+                0 0 15px rgb(254 240 138);
+}
+
+
+
+
+
+.left1{
+    top: 0.13rem;
+    transform: skew(0deg,-20deg) rotate(2deg);
+}
+.right1{
+    left: 2.3rem;
+    top: 0.21rem;
+    transform: skew(0deg,10deg) rotate(2deg);
+}
+.bottom1{
+    top: 4.89rem;left: 1rem;
+    transform: rotateZ(12deg) skewX(-61deg);
+}

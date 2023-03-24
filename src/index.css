@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.neon{
+    text-shadow: 0px 0px 5px #03bcf4,
+                0px 0px 10px #03bcf4;
+}
+
+
+/* #text-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./assets/back.png);
+    background-clip: text;
+    background-position: 0px 10px;
+    animation: back 2s linear infinte;
+    line-height: 160px;
+}
+@keyframes back{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 2000px 0px;
+    }
+} */
