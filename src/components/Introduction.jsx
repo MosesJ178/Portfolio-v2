@@ -4,13 +4,13 @@ import BlockDesign from "../components/BlockDesign";
 
 function Introduction({ dark }) {
     return (
-        <div className='dark:text-white flex flex-col justify-center items-center'>
+        <div className='text-white flex flex-col justify-center items-center pt-[80px]'>
             <div className='flex'>
                 <img src="https://em-content.zobj.net/source/microsoft-teams/337/waving-hand_1f44b.png"
                     className='sm:w-[70px] sm:h-[70px] w-[40px] h-[40px]'
                     alt="hi" />
                 <div className='sm:text-6xl text-4xl font-bold mt-2 ml-1 flex items-center'>
-                    <p className={(dark) ? 'neon' : ''}>Hi, i m Moses J</p>
+                    <p className='neon'>Hi, i m Moses J</p>
                 </div>
             </div>
             <div className=''>

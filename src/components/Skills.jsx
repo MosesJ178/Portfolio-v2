@@ -1,12 +1,14 @@
 import React from 'react'
 import "../css/Button.css"
-
+import { stack1, stack2 } from '../assets/data/content'
+import Card from './Card'
 
 function Skills() {
     return (
-        <div className='mt-[160px]'>
-            <p className='text-xl tracking-widest'>Skills</p>
-            <div className='sm:w-[350px] w-[200px] h-[40px]'></div>
+        <div className=' text-white'>
+            <p className='text-xl flex justify-center tracking-widest'>Skills</p>
+            <Card data={stack1} direction="left"/>
+            <Card data={stack2} direction="right"/>
         </div>
     )
 }
