@@ -1,86 +1,79 @@
 import tailwindcss from '../stacks/tailwindcss.svg';
-import sass from '../stacks/sass.png';
+import sass from '../stacks/sass.svg';
 import js from '../stacks/js.svg';
 import react from '../stacks/react.svg';
-import redux from '../stacks/reduxx.svg';
-import nodejs from '../stacks/nodejs.png';
-import git from '../stacks/git.svg';
+import redux from '../stacks/redux.svg';
+import nodejs from '../stacks/nodejs.svg';
 import firebase from '../stacks/firebase.svg';
-import mongo from '../stacks/mongo.png';
-import sql from '../stacks/sql.png';
-import git from '../stacks/git.svg';
-import boostrap from '../stacks/boostrap.png';
-import solidity from '../stacks/solidity.png';
-import hardhat from '../stacks/hardhat.png';
-import astro from '../stacks/astro.png';
+import mongo from '../stacks/mongo.svg';
+import sql from '../stacks/mysql.svg';
+import gitver from '../stacks/git.svg';
+import bootstrap from '../stacks/boostrap.svg';
+import solidity from '../stacks/solidity.svg';
+import eth from '../stacks/eth.svg';
+import web3 from '../stacks/web3js.svg'
+  
 
-export const frontend = [
+export const stack1 = [
     {
         title:"Bootstrap",
-        img:{boostrap}
+        img:bootstrap
     },
     {
         title:"Tailwind CSS",
-        img:{tailwindcss}
+        img:tailwindcss
     },
     {
         title:"SASS",
-        img:{sass}
+        img:sass
     },
     {
         title:"React",
-        img:{react}
+        img:react
     },
     {
         title:"Redux",
-        img:{redux}
+        img:redux
+    },
+    {
+        title:"firebase",
+        img:firebase
     },
     {
         title:"JavaScript",
-        img:{js}
+        img:js
     }
 ]
 
-export const backend = [
+
+
+export const stack2 = [
     {
         title:"Node JS",
-        img:{nodejs}
+        img:nodejs
     },
     {
         title:"MongoDB",
-        img:{mongo}
+        img:mongo
     },
     {
         title:"SQL",
-        img:{sql}
-    }
-]
-
-export const blockchain = [
-    {
-        title:"Solidity",
-        img:{solidity}
+        img:sql
     },
-    {
-        title:"Hardhat",
-        img:{hardhat}
-    }
-]
-
-export const cloud = [
-    {
-        title:"Firebase",
-        img:{firebase}
-    },
-    {
-        title:"Astrobuild",
-        img:{astro}
-    }
-]
-
-export const versionControl = [
     {
         title:"Git",
-        img:{git}
+        img:gitver
+    },
+    {
+        title:"solidity",
+        img:solidity
+    },
+    {
+        title:"eth",
+        img:eth
+    },
+    {
+        title:"web3",
+        img:web3
     }
 ]
