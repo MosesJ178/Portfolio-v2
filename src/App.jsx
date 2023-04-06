@@ -7,7 +7,6 @@ function App() {
   return (
     <div className='bg-black'>
       <Home/>
-      <Skills/>
     </div>
   )
 }
