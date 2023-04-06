@@ -7,9 +7,9 @@ import BlockDesign from './BlockDesign';
 
 function Home() {
     return (
-        <div className='min-h-screen'>
+        <div>
             <div>
-                <Introduction/>  
+                <Introduction/>
             </div>
         </div>
     )
