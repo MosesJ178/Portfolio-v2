@@ -1,7 +1,7 @@
 import React from 'react'
 import '../index.css';
 import BlockDesign from "../components/BlockDesign";
-import web3 from "../assets/web3.png";
+import '../index.css'
 
 function Introduction({ dark }) {
     return (
@@ -15,24 +15,24 @@ function Introduction({ dark }) {
                     <div className='smile mx-auto mt-5 bg-white'></div>
                 </div>
             </div>
-            <div className='flex pt-[0px]'>
+            <div className='flex pt-[0px] items-center'>
                 <img src="https://em-content.zobj.net/source/microsoft-teams/337/waving-hand_1f44b.png"
-                    className='sm:w-[70px] sm:h-[70px] w-[40px] h-[40px]'
+                    className='sm:w-[70px] img_resp sm:h-[70px] w-[50px] h-[50px]'
                     alt="hi" />
-                <div className='sm:text-6xl text-3xl name_neon font-bold mt-2 ml-1 flex items-center'>
+                <div className='sm:text-6xl name_neon font-bold mt-2 ml-1 flex items-center'>
                     <p className='neon'>Hi, i m Moses J</p>
                 </div>
             </div>
             <div>
-                <p className='sm:text-3xl text-xl  flex items-center tracking-widest mt-3'>
-                    <img src={web3} className='sm:w-30 ml-10 sm:ml-0 sm:h-20 w-22 h-10' alt="" />
-                    <p className='mb-1 bg-gradient-to-r from-purple-700 bg-clip-text text-transparent'>◗EVELOPER</p></p>
+                <div className='sm:text-3xl text-xl flex items-center tracking-widest mt-3'>
+                    <p className='text-3xl text-center resp_text font-semibold bg-gradient-to-r from-orange-600 via-yellow-600 to-yellow-200 bg-clip-text text-transparent'>Full Stack Developer</p>
+                </div>
             </div>
             <BlockDesign />
             <div className='mt-[270px]'>
                 <div className='buttons sm:w-[350px] w-[200px] h-[40px] flex justify-between'>
-                    <a className='px-2 border-2 cursor-pointer'>Resume</a>
-                    <a className="px-2 border-2 cursor-pointer">Experience</a>
+                    <a className='px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600'>Resume</a>
+                    <a className="px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600">Experience</a>
                 </div>
             </div>
         </div>

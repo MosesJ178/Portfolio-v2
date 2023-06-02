@@ -2,40 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    background-color: black;
-    color: white;
+* {
+  background-color: black;
+  color: white;
 }
 
-.neon{
-    text-shadow: 0px 0px 5px #03bcf4,
-                0px 0px 10px #03bcf4;
+.neon {
+  text-shadow: 0px 0px 5px #03bcf4, 0px 0px 10px #03bcf4;
 }
 
-.roboGrad{
-    background: conic-gradient(from 480deg,#3046ff,#6549f5 ,#a951f1,#76b8d2,#49f4c4,#44c8d4,#3ea7e1,#3b8be9);
-    animation:  3s linear infinite;
+.roboGrad {
+  background: conic-gradient(
+    from 480deg,
+    #3046ff,
+    #6549f5,
+    #a951f1,
+    #76b8d2,
+    #49f4c4,
+    #44c8d4,
+    #3ea7e1,
+    #3b8be9
+  );
+  animation: 3s linear infinite;
 }
 @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  .smile {
-    position: relative;
-    width: 100px;
-    height: 50px;
-    border: 3px solid black;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    transform: rotate(-180deg);
+  to {
+    transform: rotate(360deg);
   }
+}
+.smile {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border: 3px solid black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotate(-180deg);
+}
 
-  @media (min-width:200px){
-    .name_neon{
-      font-size:10px;
-    }
+@media (max-width: 640px) {
+  .name_neon {
+    font-size: 40px;
   }
+}
+@media (max-width: 353px) {
+  .name_neon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 322px) {
+  .resp_text {
+    font-size: 20px;
+  }
+}
+
+.neon_shadow {
+  border: 0.2rem solid #fff;
+  padding: 0.2em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e3c459,
+    0 0 0.5rem #e3c459, inset 0 0 1.3rem #e3c459;
+}
+
+.border_shadow {
+  border: 0.2rem solid #fff;
+  padding: 0.2em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e3c459,
+    0 0 0.5rem #e3c459;
+}

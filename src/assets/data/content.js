@@ -12,6 +12,8 @@ import bootstrap from '../stacks/boostrap.svg';
 import solidity from '../stacks/solidity.svg';
 import eth from '../stacks/eth.svg';
 import web3 from '../stacks/web3js.svg'
+import TypeScript from '../stacks/TypeScript.svg'
+import Express from '../stacks/Express.svg'
   
 
 export const stack1 = [
@@ -32,6 +34,10 @@ export const stack1 = [
         img:react
     },
     {
+        title:"TypeScript",
+        img:TypeScript
+    },
+    {
         title:"Redux",
         img:redux
     },
@@ -47,10 +53,15 @@ export const stack1 = [
 
 
 
+
 export const stack2 = [
     {
         title:"Node JS",
         img:nodejs
+    },
+    {
+        title:"Express JS",
+        img:Express
     },
     {
         title:"MongoDB",
@@ -64,6 +75,13 @@ export const stack2 = [
         title:"Git",
         img:gitver
     },
+    {
+        title:"firebase",
+        img:firebase
+    }
+]
+
+const web3stack = [
     {
         title:"solidity",
         img:solidity
