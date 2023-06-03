@@ -2,6 +2,7 @@ import React from 'react'
 import '../index.css';
 import BlockDesign from "../components/BlockDesign";
 import '../index.css'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Introduction({ dark }) {
     return (
@@ -31,8 +32,8 @@ function Introduction({ dark }) {
             <BlockDesign />
             <div className='mt-[270px]'>
                 <div className='buttons sm:w-[350px] w-[200px] h-[40px] flex justify-between'>
-                    <a className='px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600'>Resume</a>
-                    <a className="px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600">Experience</a>
+                    <a download={true} href='https://drive.google.com/file/d/1fEptkIJR3zF-dNqAMWRaO2-srWXAKeCw/view?usp=drive_link' className='px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600'>Resume</a>
+                    <Link to='experience' spy={true} smooth={true} offset={-40} duration={500} className="px-2 pt-1 border-b-8 select-none border-2 cursor-pointer rounded-lg hover:bg-slate-600">Experience</Link>
                 </div>
             </div>
         </div>
