@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 * {
   background-color: black;
@@ -21,18 +21,22 @@
     #49f4c4,
     #44c8d4,
     #3ea7e1,
-    #3b8be9
+    #3b8be9,
+    #3046ff
   );
-  animation: 3s linear infinite;
+  animation: rotate 3s linear infinite;
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .smile {
   position: relative;
   width: 100px;
@@ -48,6 +52,7 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 353px) {
   .name_neon {
     font-size: 28px;
@@ -72,4 +77,209 @@
   padding: 0.2em;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e3c459,
     0 0 0.5rem #e3c459;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+.eyes {
+  animation: blink 0.5s;
+}
+
+#demo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  color: #03e9f4;
+  text-decoration: none;
+  font-size: 14px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#demo span {
+  position: absolute;
+  display: block;
+}
+
+#demo span:nth-child(1) {
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0s; /* Updated delay for the first span */
+}
+
+@keyframes animate1 {
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left: 100%;
+  }
+}
+
+#demo span:nth-child(2) {
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top: 100%;
+  }
+}
+
+#demo span:nth-child(3) {
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite; /* Updated duration for the third span */
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+
+#demo span:nth-child(4) {
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+#demo2 {
+  position: relative;
+  display: flex;
+  padding: 3px 15px;
+  color: #03e9f4;
+  text-decoration: none;
+  font-size: 14px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#demo2 span {
+  position: absolute;
+  display: block;
+}
+
+#demo2 span:nth-child(1) {
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate21 1s linear infinite;
+  animation-delay: 0s; /* Updated delay for the first span */
+}
+@keyframes animate21 {
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+#demo2 span:nth-child(3) {
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate23 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate23 {
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left: 100%;
+  }
+}
+#demo2 span:nth-child(2) {
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate22 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate22 {
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top: 100%;
+  }
+}
+#demo2 span:nth-child(4) {
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate24 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate24 {
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+}
+.flicker{
+  animation: flicker 1s infinite alternate;  
+}
+@keyframes flicker {
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    
+      text-shadow:
+          -0.2rem -0.2rem 1rem #fff,
+          0.2rem 0.2rem 1rem #fff,
+          0 0 2rem #08f,
+          0 0 4rem #08f,    
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
